@@ -22,6 +22,7 @@ class CalWidget(QWidget):
         self.btn_8 = QPushButton(str(8))
         self.btn_9 = QPushButton(str(9))
         self.btn_0 = QPushButton(str(0))
+        self.btn_decimal_point = QPushButton('.')
         self.btn_plus = QPushButton('+')
         self.btn_minus = QPushButton('-')
         self.btn_multiply = QPushButton('*')
@@ -50,6 +51,7 @@ class CalWidget(QWidget):
         self.grid_layout.addWidget(self.btn_multiply, 2, 3)
         self.grid_layout.addWidget(self.btn_divide, 2, 4)
         #
+        self.grid_layout.addWidget(self.btn_decimal_point, 3, 0)
         self.grid_layout.addWidget(self.btn_0, 3, 1)
         self.grid_layout.addWidget(self.btn_ok, 3, 2)
         #
